@@ -11,7 +11,7 @@ public class App : MonoBehaviour
     }
 
     public void Btn_connect(){
-        this.RunADBCommand("adb connect 127.0.0.1:5555");
+       // this.RunADBCommand("adb connect emulator-5554");
         Debug.Log(this.RunADBCommand("adb shell monkey -p com.firsttouchgames.dls7 -c android.intent.category.LAUNCHER 1"));
         Debug.Log("Connect Adb");
     }
